@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<head> 
+  <link rel="stylesheet" href="styles.css"
+  </head> 
+  <body> 
+    <div class="container"> 
+      <header class="header">
+        <h1 id="title" class="text-center">Software Developer Survey</h1>
+<p id="description"class="text-center">Please Help Me On My Journey to Become a Software Developer</p>
+</header>
+ <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+         <div class="form-group">
+          <label id="linkedin-label" for="email">Linkedin (Optional)</label>
+          <input
+            type="linkedin"
+            name="linkedin"
+            id="linkedin"
+            class="form-control"
+            placeholder="Linkedin Profile URL"
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Experience<span class="clue">(# of Years)</span></label
+          >
+          <input
+            type="number"
+            name="experience"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="# of years"
+          />
+        </div>
+<div class="form-group">
+  <p>Which option best describes your current role as a Software Developer?</p>
+  <select id="dropdown" name="role" class="form-control"required>
+            <option disabled selected value>Select current role</option>
+            <option value="Front end developer">Front End Developer</option>
+            <option value="back end developer">Back End Developer</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+  <p>What is your yearly salary?</p>
+  <select id="dropdown" name="role" class="form-control"required>
+            <option disabled selected value>Select Salary</option>
+            <option value="0-$50,000">0-$50,000</option>
+            <option value="$50,000-$75,000">$50,000-$75,000</option>
+            <option value="$75,000-$100,000">$75,000-$100,000</option>
+            <option value="$100,000-$150,000">$100,000-$150,000</option>
+            <option value="$150,000-$200,000">$150,000-$200,000</option>
+             <option value="$200,000-$300,000">$200,000-$300,000</option>
+              <option value="$300,000+">$300,000+</option>
+          </select>
+        </div>
+   <div class="form-group">
+          <p>How did you learn coding and other skills required to be a Software Developer?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Self-Taught"
+              type="radio"
+              class="input-radio"
+              checked
+            />Self-Taught</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="College"
+              type="radio"
+              class="input-radio"
+            />College</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Bootcamp"
+              type="radio"
+              class="input-radio"
+            />Bootcamp</label
+          >
+            <label
+            ><input
+              name="user-recommend"
+              value="Other"
+              type="radio"
+              class="input-radio"
+            />Other</label>
+        </div>
+ <div class="form-group">
+          <p>
+            What Programs/Lanaguages do you use on a daily basis?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />Javascript</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="python"
+              type="checkbox"
+              class="input-checkbox"
+            />Python</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="C++"
+              type="checkbox"
+              class="input-checkbox"
+            />C++</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Ruby"
+              type="checkbox"
+              class="input-checkbox"
+            />Ruby</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="JS React"
+              type="checkbox"
+              class="input-checkbox"
+            />JS-React</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="GoLang"
+              type="checkbox"
+              class="input-checkbox"
+            />GoLang</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="UI/UX"
+              type="checkbox"
+              class="input-checkbox"
+            />UI/UX</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Docker"
+              type="checkbox"
+              class="input-checkbox"
+            />Docker</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Kubernetes"
+              type="checkbox"
+              class="input-checkbox"
+            />Kubernetes</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="MySQL"
+              type="checkbox"
+              class="input-checkbox"
+            />MySQL</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Node.JS"
+              type="checkbox"
+              class="input-checkbox"
+            />Node.js</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Rails"
+              type="checkbox"
+              class="input-checkbox"
+            />Ruby on Rails</label>
+             <label
+            ><input
+              name="prefer"
+              value="Flutter"
+              type="checkbox"
+              class="input-checkbox"
+            />Flutter</label>
+             <label
+            ><input
+              name="prefer"
+              value="Heroku"
+              type="checkbox"
+              class="input-checkbox"
+            />Heroku</label>
+             <label
+            ><input
+              name="prefer"
+              value="Swift"
+              type="checkbox"
+              class="input-checkbox"
+            />Swift</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Django"
+              type="checkbox"
+              class="input-checkbox"
+            />Django</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="BootStrap"
+              type="checkbox"
+              class="input-checkbox"
+            />bootstrap</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="AngularJS"
+              type="checkbox"
+              class="input-checkbox"
+            />AngularJS</label
+          >
+           <label
+            ><input
+              name="prefer"
+              value="Other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
+          >
+        </div>
+         <div class="form-group">
+          <p>Any advice or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
